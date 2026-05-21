@@ -1,50 +1,152 @@
 <p align="center">
   <img src="images/osTicket Header.png" alt="Azure Networking and Protocol Analysis Lab Header" width="100%">
 </p>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
+## Project Summary
+This project demonstrates the deployment of the osTicket help desk system on a Windows virtual machine hosted in Microsoft Azure. The lab involved configuring a cloud-based Windows environment, enabling IIS web server features, installing PHP and MySQL dependencies, deploying the osTicket web application, creating the required database, and completing the browser-based installation process.
 
-<h2>Environments and Technologies Used</h2>
+The purpose of this project was to gain hands-on experience with web application deployment, Windows server configuration, database setup, and help desk platform installation in a cloud environment.
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+## Technologies Used
+- Microsoft Azure
+- Azure Virtual Machines
+- Remote Desktop Protocol
 - Internet Information Services (IIS)
+- PHP Manager for IIS
+- PHP
+- MySQL
+- HeidiSQL
+- osTicket
 
-<h2>Operating Systems Used </h2>
+## Environments Used
+- Microsoft Azure
+- Windows 10 Virtual Machine
+- IIS Web Server
+- MySQL Database Environment
 
-- Windows 10</b> (21H2)
+## Languages / Components Used
+- PHP
+- SQL
+- IIS / CGI
+- MySQL Database
 
-<h2>List of Prerequisites</h2>
+## Project Objectives
+- Create a Windows virtual machine in Microsoft Azure
+- Connect to the virtual machine using Remote Desktop
+- Install and configure IIS with CGI support
+- Install PHP Manager, PHP, URL Rewrite Module, and MySQL
+- Deploy the osTicket application files into the IIS web directory
+- Configure required PHP extensions
+- Create a MySQL database for osTicket
+- Complete the osTicket web-based installation
+- Verify access to the end-user portal and admin/agent login page
+- Perform cleanup and basic post-installation security steps
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+## Implementation Steps
 
+### Step 1: Create the Azure Virtual Machine
+Created a Windows 10 virtual machine in Microsoft Azure to host the osTicket help desk system. This VM served as the web server and database host for the lab.
 
-<h2>Installation Steps</h2>
+![Step 1 - Azure VM Created](images/01-azure-vm-created.png)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### Step 2: Connect to the VM Using Remote Desktop
+Connected to the Azure virtual machine using Remote Desktop Protocol so the system could be configured directly.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+![Step 2 - RDP Connection](images/02-rdp-connection.png)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### Step 3: Download and Extract the osTicket Installation Files
+Downloaded the osTicket installation files and extracted them on the virtual machine. These files included osTicket and several required dependencies used during setup.
+
+![Step 3 - Installation Files](images/03-installation-files.png)
+
+### Step 4: Install IIS and Enable CGI
+Enabled Internet Information Services and the CGI feature in Windows. IIS was required to host the osTicket web application, and CGI support was needed for PHP functionality.
+
+![Step 4 - IIS CGI Enabled](images/04-iis-cgi-enabled.png)
+
+### Step 5: Install PHP Manager for IIS
+Installed PHP Manager for IIS to make it easier to register and manage PHP within IIS.
+
+![Step 5 - PHP Manager Installed](images/05-php-manager-installed.png)
+
+### Step 6: Install the URL Rewrite Module
+Installed the IIS URL Rewrite Module, which is commonly required for web applications that rely on rewritten or cleaner URLs.
+
+![Step 6 - URL Rewrite Installed](images/06-url-rewrite-installed.png)
+
+### Step 7: Create the PHP Directory and Extract PHP
+Created the `C:\PHP` directory and extracted the PHP files into that folder. This prepared the system so PHP could be registered with IIS.
+
+![Step 7 - PHP Directory](images/07-php-directory.png)
+
+### Step 8: Install Required Runtime and Database Components
+Installed the Visual C++ Redistributable and MySQL. MySQL was used as the database backend for osTicket.
+
+![Step 8 - MySQL Installed](images/08-mysql-installed.png)
+
+### Step 9: Register PHP in IIS
+Opened IIS as administrator and registered PHP through PHP Manager by selecting the `php-cgi.exe` executable from the PHP directory. IIS was then restarted to apply the configuration changes.
+
+![Step 9 - PHP Registered](images/09-php-registered.png)
+
+### Step 10: Deploy osTicket to the IIS Web Directory
+Copied the osTicket upload folder into `C:\inetpub\wwwroot` and renamed it to `osTicket`. This made the application accessible through the local IIS web server.
+
+![Step 10 - osTicket Web Directory](images/10-osticket-web-directory.png)
+
+### Step 11: Enable Required PHP Extensions
+Enabled required PHP extensions for osTicket, including IMAP, INTL, and OPcache. After enabling the extensions, the osTicket setup page was refreshed to verify the requirements were met.
+
+![Step 11 - PHP Extensions Enabled](images/11-php-extensions-enabled.png)
+
+### Step 12: Rename the osTicket Configuration File
+Renamed `ost-sampleconfig.php` to `ost-config.php` inside the osTicket include directory. This file is used by osTicket to store configuration settings.
+
+![Step 12 - Config File Renamed](images/12-config-file-renamed.png)
+
+### Step 13: Assign Permissions to the Configuration File
+Updated permissions on `ost-config.php` so the installer could write the necessary configuration data during setup.
+
+![Step 13 - Config Permissions](images/13-config-permissions.png)
+
+### Step 14: Create the osTicket Database
+Opened HeidiSQL, connected to the local MySQL instance, and created a database for osTicket.
+
+![Step 14 - Database Created](images/14-database-created.png)
+
+### Step 15: Complete the Browser-Based osTicket Installation
+Completed the osTicket setup process in the browser by entering the required help desk and database information.
+
+![Step 15 - osTicket Installation Complete](images/15-installation-complete.png)
+
+### Step 16: Verify Portal Access
+Verified that both the end-user portal and the admin/agent login page were accessible.
+
+![Step 16 - Portal Verification](images/16-portal-verification.png)
+
+### Step 17: Perform Cleanup and Secure Configuration File
+Deleted the setup directory and changed the osTicket configuration file permissions to read-only after installation.
+
+![Step 17 - Cleanup](images/17-cleanup.png)
+
+## Demonstration
+The final osTicket deployment was verified by accessing:
+
+- The end-user portal
+- The admin/agent login page
+
+This confirmed that IIS, PHP, MySQL, and osTicket were configured correctly and that the help desk web application was functioning.
+
+## Skills Demonstrated
+- Microsoft Azure virtual machine deployment
+- Remote Desktop administration
+- IIS web server configuration
+- PHP installation and configuration
+- MySQL database setup
+- Web application deployment
+- File permissions management
+- Basic post-installation security cleanup
+- Technical documentation
+
+## Key Takeaways
+This project helped me understand how web applications depend on multiple layers working together, including the operating system, web server, PHP runtime, database server, application files, permissions, and browser-based configuration. It also reinforced the importance of documenting each step clearly and securing configuration files after installation.
