@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+  <img src="images/osTicket Header.png" alt="Azure Networking and Protocol Analysis Lab Header" width="100%">
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
