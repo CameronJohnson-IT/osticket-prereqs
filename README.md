@@ -67,7 +67,7 @@ Enabled Internet Information Services and the CGI feature in Windows. IIS was re
 ### Step 5: Install PHP Manager for IIS
 Installed PHP Manager for IIS to make it easier to register and manage PHP within IIS.
 
-![Step 5 - PHP Manager Installed](images/05-php-manager-installed.png)
+![Step 5 - PHP Manager Installed](images/PHP-install-step-5.png)
 
 ### Step 6: Install the URL Rewrite Module
 Installed the IIS URL Rewrite Module, which is commonly required for web applications that rely on rewritten or cleaner URLs.
