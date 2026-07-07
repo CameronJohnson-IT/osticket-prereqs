@@ -72,7 +72,7 @@ Installed PHP Manager for IIS to make it easier to register and manage PHP withi
 ### Step 6: Install the URL Rewrite Module
 Installed the IIS URL Rewrite Module, which is commonly required for web applications that rely on rewritten or cleaner URLs.
 
-![Step 6 - URL Rewrite Installed](images/06-url-rewrite-installed.png)
+![Step 6 - URL Rewrite Installed](images/Rewrite-module-step-6.png)
 
 ### Step 7: Create the PHP Directory and Extract PHP
 Created the `C:\PHP` directory and extracted the PHP files into that folder. This prepared the system so PHP could be registered with IIS.
