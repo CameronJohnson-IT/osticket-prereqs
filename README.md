@@ -117,12 +117,8 @@ Completed the osTicket setup process in the browser by entering the required hel
 ### Step 15: Verify Portal Access
 Verified that both the end-user portal and the admin/agent login page were accessible.
 
-![Step 15 - Portal Verification](images/16-portal-verification.png)
+![Step 15 - Portal Verification](images/verified-portal-access-step-15.png)
 
-### Step 16: Perform Cleanup and Secure Configuration File
-Deleted the setup directory and changed the osTicket configuration file permissions to read-only after installation.
-
-![Step 16 - Cleanup](images/17-cleanup.png)
 
 ## Demonstration
 The final osTicket deployment was verified by accessing:
