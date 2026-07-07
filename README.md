@@ -135,7 +135,6 @@ This confirmed that IIS, PHP, MySQL, and osTicket were configured correctly and 
 - MySQL database setup
 - Web application deployment
 - File permissions management
-- Basic post-installation security cleanup
 - Technical documentation
 
 ## Key Takeaways
