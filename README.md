@@ -112,7 +112,7 @@ Opened HeidiSQL, connected to the local MySQL instance, and created a database f
 ### Step 14: Complete the Browser-Based osTicket Installation
 Completed the osTicket setup process in the browser by entering the required help desk and database information.
 
-![Step 14 - osTicket Installation Complete](images/15-installation-complete.png)
+![Step 14 - osTicket Installation Complete](images/completed-osticket-installation-step-14.png)
 
 ### Step 15: Verify Portal Access
 Verified that both the end-user portal and the admin/agent login page were accessible.
