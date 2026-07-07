@@ -97,7 +97,7 @@ Copied the osTicket upload folder into `C:\inetpub\wwwroot` and renamed it to `o
 ### Step 11: Enable Required PHP Extensions
 Enabled required PHP extensions for osTicket, including IMAP, INTL, and OPcache. After enabling the extensions, the osTicket setup page was refreshed to verify the requirements were met.
 
-![Step 11 - PHP Extensions Enabled](images/11-php-extensions-enabled.png)
+![Step 11 - PHP Extensions Enabled](images/enable-php-extensions-step-11.png)
 
 ### Step 12: Rename the osTicket Configuration File
 Renamed `ost-sampleconfig.php` to `ost-config.php` inside the osTicket include directory. This file is used by osTicket to store configuration settings.
