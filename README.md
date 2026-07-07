@@ -107,7 +107,7 @@ Renamed `ost-sampleconfig.php` to `ost-config.php` inside the osTicket include d
 ### Step 13: Create the osTicket Database
 Opened HeidiSQL, connected to the local MySQL instance, and created a database for osTicket.
 
-![Step 13 - Database Created](images/14-database-created.png)
+![Step 13 - Database Created](images/osticket-database-step-13.png)
 
 ### Step 14: Complete the Browser-Based osTicket Installation
 Completed the osTicket setup process in the browser by entering the required help desk and database information.
