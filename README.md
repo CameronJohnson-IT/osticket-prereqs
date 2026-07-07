@@ -87,7 +87,7 @@ Installed the Visual C++ Redistributable and MySQL. MySQL was used as the databa
 ### Step 9: Register PHP in IIS
 Opened IIS as administrator and registered PHP through PHP Manager by selecting the `php-cgi.exe` executable from the PHP directory. IIS was then restarted to apply the configuration changes.
 
-![Step 9 - PHP Registered](images/09-php-registered.png)
+![Step 9 - PHP Registered](images/register-PHP-step-9.png)
 
 ### Step 10: Deploy osTicket to the IIS Web Directory
 Copied the osTicket upload folder into `C:\inetpub\wwwroot` and renamed it to `osTicket`. This made the application accessible through the local IIS web server.
