@@ -47,12 +47,12 @@ The purpose of this project was to gain hands-on experience with web application
 ### Step 1: Create the Azure Virtual Machine
 Created a Windows 10 virtual machine in Microsoft Azure to host the osTicket help desk system. This VM served as the web server and database host for the lab.
 
-![Azure Virtual Machine creation screen](images/azure-vm-create-step-1.png)
+![Step 1 - Azure Virtual Machine Creation](images/azure-vm-create-step-1.png)
 
 ### Step 2: Connect to the VM Using Remote Desktop
 Connected to the Azure virtual machine using Remote Desktop Protocol so the system could be configured directly.
 
-![Step 2 - RDP Connection](images/02-rdp-connection.png)
+![Step 2 - RDP Connection](images/remote-desktop-connection-step-2.png)
 
 ### Step 3: Download and Extract the osTicket Installation Files
 Downloaded the osTicket installation files and extracted them on the virtual machine. These files included osTicket and several required dependencies used during setup.
