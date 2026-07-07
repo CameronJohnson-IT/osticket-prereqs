@@ -57,7 +57,7 @@ Connected to the Azure virtual machine using Remote Desktop Protocol so the syst
 ### Step 3: Download and Extract the osTicket Installation Files
 Downloaded the osTicket installation files and extracted them on the virtual machine. These files included osTicket and several required dependencies used during setup.
 
-![Step 3 - Installation Files](images/03-installation-files.png)
+![Step 3 - Installation Files](images/osticket-installation-files-step-3.png)
 
 ### Step 4: Install IIS and Enable CGI
 Enabled Internet Information Services and the CGI feature in Windows. IIS was required to host the osTicket web application, and CGI support was needed for PHP functionality.
