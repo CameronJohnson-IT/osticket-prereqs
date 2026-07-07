@@ -62,7 +62,7 @@ Downloaded the osTicket installation files and extracted them on the virtual mac
 ### Step 4: Install IIS and Enable CGI
 Enabled Internet Information Services and the CGI feature in Windows. IIS was required to host the osTicket web application, and CGI support was needed for PHP functionality.
 
-![Step 4 - IIS CGI Enabled](images/04-iis-cgi-enabled.png)
+![Step 4 - IIS CGI Enabled](images/IIS-CGI-install-step-4.png)
 
 ### Step 5: Install PHP Manager for IIS
 Installed PHP Manager for IIS to make it easier to register and manage PHP within IIS.
