@@ -92,7 +92,7 @@ Opened IIS as administrator and registered PHP through PHP Manager by selecting 
 ### Step 10: Deploy osTicket to the IIS Web Directory
 Copied the osTicket upload folder into `C:\inetpub\wwwroot` and renamed it to `osTicket`. This made the application accessible through the local IIS web server.
 
-![Step 10 - osTicket Web Directory](images/10-osticket-web-directory.png)
+![Step 10 - osTicket Web Directory](images/deploy-osTicket-step-10.png)
 
 ### Step 11: Enable Required PHP Extensions
 Enabled required PHP extensions for osTicket, including IMAP, INTL, and OPcache. After enabling the extensions, the osTicket setup page was refreshed to verify the requirements were met.
