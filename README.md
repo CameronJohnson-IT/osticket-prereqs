@@ -7,6 +7,12 @@ This project demonstrates the deployment of the osTicket help desk system on a W
 
 The purpose of this project was to gain hands-on experience with web application deployment, Windows-based web server configuration, database setup, and help desk platform installation in a cloud environment.
 
+## Related osTicket Projects
+
+- [osTicket: Prerequisites and Installation](https://github.com/CameronJohnson-IT/osticket-prereqs)
+- [osTicket: Post-Installation Configuration](https://github.com/CameronJohnson-IT/post-install-config)
+- [osTicket: Ticket Lifecycle Examples](LINK-HERE)
+
 ## Technologies Used
 - Microsoft Azure
 - Azure Virtual Machines
