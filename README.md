@@ -40,7 +40,6 @@ The purpose of this project was to gain hands-on experience with web application
 - Create a MySQL database for osTicket
 - Complete the osTicket web-based installation
 - Verify access to the end-user portal and admin/agent login page
-- Perform cleanup and basic post-installation security steps
 
 ## Implementation Steps
 
