@@ -5,7 +5,7 @@
 ## Project Summary
 This project demonstrates the deployment of the osTicket help desk system on a Windows virtual machine hosted in Microsoft Azure. The lab involved configuring a cloud-based Windows environment, enabling IIS web server features, installing PHP and MySQL dependencies, deploying the osTicket web application, creating the required database, and completing the browser-based installation process.
 
-The purpose of this project was to gain hands-on experience with web application deployment, Windows server configuration, database setup, and help desk platform installation in a cloud environment.
+The purpose of this project was to gain hands-on experience with web application deployment, Windows-based web server configuration, database setup, and help desk platform installation in a cloud environment.
 
 ## Technologies Used
 - Microsoft Azure
