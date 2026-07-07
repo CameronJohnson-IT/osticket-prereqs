@@ -99,35 +99,30 @@ Enabled required PHP extensions for osTicket, including IMAP, INTL, and OPcache.
 
 ![Step 11 - PHP Extensions Enabled](images/enable-php-extensions-step-11.png)
 
-### Step 12: Rename the osTicket Configuration File
-Renamed `ost-sampleconfig.php` to `ost-config.php` inside the osTicket include directory. This file is used by osTicket to store configuration settings.
+### Step 12: Rename the osTicket Configuration File & Assign Permissions
+Renamed `ost-sampleconfig.php` to `ost-config.php` inside the osTicket include directory. This file is used by osTicket to store configuration settings. Then updated permissions on `ost-config.php` so the installer could write the necessary configuration data during setup.
 
 ![Step 12 - Config File Renamed](images/renamed-ost-config-step-12.png)
 
-### Step 13: Assign Permissions to the Configuration File
-Updated permissions on `ost-config.php` so the installer could write the necessary configuration data during setup.
-
-![Step 13 - Config Permissions](images/13-config-permissions.png)
-
-### Step 14: Create the osTicket Database
+### Step 13: Create the osTicket Database
 Opened HeidiSQL, connected to the local MySQL instance, and created a database for osTicket.
 
-![Step 14 - Database Created](images/14-database-created.png)
+![Step 13 - Database Created](images/14-database-created.png)
 
-### Step 15: Complete the Browser-Based osTicket Installation
+### Step 14: Complete the Browser-Based osTicket Installation
 Completed the osTicket setup process in the browser by entering the required help desk and database information.
 
-![Step 15 - osTicket Installation Complete](images/15-installation-complete.png)
+![Step 14 - osTicket Installation Complete](images/15-installation-complete.png)
 
-### Step 16: Verify Portal Access
+### Step 15: Verify Portal Access
 Verified that both the end-user portal and the admin/agent login page were accessible.
 
-![Step 16 - Portal Verification](images/16-portal-verification.png)
+![Step 15 - Portal Verification](images/16-portal-verification.png)
 
-### Step 17: Perform Cleanup and Secure Configuration File
+### Step 16: Perform Cleanup and Secure Configuration File
 Deleted the setup directory and changed the osTicket configuration file permissions to read-only after installation.
 
-![Step 17 - Cleanup](images/17-cleanup.png)
+![Step 16 - Cleanup](images/17-cleanup.png)
 
 ## Demonstration
 The final osTicket deployment was verified by accessing:
