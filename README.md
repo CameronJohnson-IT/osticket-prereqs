@@ -102,7 +102,7 @@ Enabled required PHP extensions for osTicket, including IMAP, INTL, and OPcache.
 ### Step 12: Rename the osTicket Configuration File
 Renamed `ost-sampleconfig.php` to `ost-config.php` inside the osTicket include directory. This file is used by osTicket to store configuration settings.
 
-![Step 12 - Config File Renamed](images/12-config-file-renamed.png)
+![Step 12 - Config File Renamed](images/renamed-ost-config-step-12.png)
 
 ### Step 13: Assign Permissions to the Configuration File
 Updated permissions on `ost-config.php` so the installer could write the necessary configuration data during setup.
