@@ -77,7 +77,7 @@ Installed the IIS URL Rewrite Module, which is commonly required for web applica
 ### Step 7: Create the PHP Directory and Extract PHP
 Created the `C:\PHP` directory and extracted the PHP files into that folder. This prepared the system so PHP could be registered with IIS.
 
-![Step 7 - PHP Directory](images/07-php-directory.png)
+![Step 7 - PHP Directory](images/PHP-directory-step-7.png)
 
 ### Step 8: Install Required Runtime and Database Components
 Installed the Visual C++ Redistributable and MySQL. MySQL was used as the database backend for osTicket.
