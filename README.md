@@ -11,7 +11,7 @@ The purpose of this project was to gain hands-on experience with web application
 
 - [osTicket: Prerequisites and Installation](https://github.com/CameronJohnson-IT/osticket-prereqs)
 - [osTicket: Post-Installation Configuration](https://github.com/CameronJohnson-IT/post-install-config)
-- [osTicket: Ticket Lifecycle Examples](LINK-HERE)
+- [osTicket: Ticket Lifecycle Examples](https://github.com/CameronJohnson-IT/ticket-lifecycle)
 
 ## Technologies Used
 - Microsoft Azure
