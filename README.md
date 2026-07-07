@@ -82,7 +82,7 @@ Created the `C:\PHP` directory and extracted the PHP files into that folder. Thi
 ### Step 8: Install Required Runtime and Database Components
 Installed the Visual C++ Redistributable and MySQL. MySQL was used as the database backend for osTicket.
 
-![Step 8 - MySQL Installed](images/08-mysql-installed.png)
+![Step 8 - MySQL Installed](images/SQL-setup-step-8.png)
 
 ### Step 9: Register PHP in IIS
 Opened IIS as administrator and registered PHP through PHP Manager by selecting the `php-cgi.exe` executable from the PHP directory. IIS was then restarted to apply the configuration changes.
